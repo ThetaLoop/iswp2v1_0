@@ -1,0 +1,4 @@
+RewriteRngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -F
+RewriteRule ^(.*)$ $1.html [NC,L]
